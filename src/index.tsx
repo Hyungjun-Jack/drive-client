@@ -1,5 +1,15 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
-import App from "./App";
+import React from "react";
+import { ApolloProvider } from "react-apollo";
+import ReactDOM from "react-dom";
+import client from "./apollo";
+import App from "./Components/App";
+import "./global-styles";
+import GlobalStyle from "./global-styles";
 
-ReactDOM.render(<App />, document.getElementById("root") as HTMLElement);
+ReactDOM.render(
+  <ApolloProvider client={client}>
+    <App />
+    <GlobalStyle />
+  </ApolloProvider>,
+  document.getElementById("root") as HTMLElement
+);
