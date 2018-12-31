@@ -15,8 +15,8 @@ drive client
 
     - [x] Home
     - [ ] Ride
-    - [ ] Edit Account
-    - [ ] Settings
+    - [x] Edit Account
+    - [x] Settings
     - [ ] Places
     - [ ] Add Place
     - [ ] Find Address
